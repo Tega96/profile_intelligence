@@ -1,6 +1,9 @@
 -- Create UUID extention if not exists
 CREATE EXTENTION IF NOT EXISTS "uuid-ossp";
 
+-- Drop table if exists (for clean setup)
+DROP TABLE IF EXISTS profiles CASCADE;
+
 -- Create profiles table
 CREATE TABLE IF NOT EXISTS profiles (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
