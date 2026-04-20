@@ -4,7 +4,7 @@ import {
     formatProfileListRow,
     formatProfileRow,
     getAgeGroup
- } from '../utils/formatters';
+} from '../utils/formatters';
 
  async function createProfile(name, enrichedData) {
     const id = uuidv7();
