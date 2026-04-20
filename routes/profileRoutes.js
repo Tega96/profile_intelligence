@@ -1,15 +1,15 @@
 import { Router } from 'express'
 import { 
-    allUsersProfile, 
+    getProfileById,
+    getAllProfiles,
     createProfile, 
     deleteProfile, 
-    userProfile
 } from '../controllers/profileControllers.js';
 
 const router = Router();
 
-router.get('/', allUsersProfile)
-router.get('/:id', userProfile)
+router.get('/', getAllProfiles)
+router.get('/:id', getProfileById)
 router.post('/', createProfile)
 router.delete('/:id', deleteProfile)
 
